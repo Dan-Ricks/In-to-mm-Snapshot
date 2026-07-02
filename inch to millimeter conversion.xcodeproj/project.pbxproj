@@ -254,6 +254,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "inch to millimeter conversion/inch to millimeter conversion.entitlements";
 				INFOPLIST_KEY_CFBundleDisplayName = "In to mm Snapshot";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to the camera to take a photo of the item being measured so you can include it in your screenshot.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app saves screenshots of your measurements to your photo library.";
@@ -299,6 +300,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "inch to millimeter conversion/inch to millimeter conversion.entitlements";
 				INFOPLIST_KEY_CFBundleDisplayName = "In to mm Snapshot";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to the camera to take a photo of the item being measured so you can include it in your screenshot.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app saves screenshots of your measurements to your photo library.";

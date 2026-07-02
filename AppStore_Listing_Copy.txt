@@ -53,6 +53,6 @@ Take with Cmd+S in Simulator. Organize into your Screenshots/ folders.
 - Copyright: 2026 Dan Ricks
 - Bundle ID: Dan-Ricks.inch-to-millimeter-conversion (or your registered ID)
 - SKU: in-to-mm-snapshot
-- Privacy Policy URL: https://raw.githubusercontent.com/Dan-Ricks/InToMM/main/Privacy_Policy.md
+- Privacy Policy URL: https://raw.githubusercontent.com/Dan-Ricks/In-to-mm-Snapshot/main/Privacy_Policy.md
 
 Make sure to select your uploaded build under the 1.0 version before submitting.
