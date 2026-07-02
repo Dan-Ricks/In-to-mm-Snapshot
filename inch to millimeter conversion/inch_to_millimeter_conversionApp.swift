@@ -1,6 +1,6 @@
 //
 //  inch_to_millimeter_conversionApp.swift
-//  inch to millimeter conversion
+//  In to mm Snapshot
 //
 //  Created by Dan on 6/20/26.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct inch_to_millimeter_conversionApp: App {
+struct InTommSnapshotApp: App {
     @State private var isActive = false
 
     var body: some Scene {
@@ -43,7 +43,7 @@ struct SplashView: View {
                 .ignoresSafeArea()
 
             VStack(spacing: 12) {
-                Text("inch to mm converter")
+                Text("In to mm Snapshot")
                     .font(.system(size: 42, weight: .bold))
                     .foregroundColor(.black)
                     .shadow(color: .white, radius: 3, x: 0, y: 0)
@@ -52,12 +52,6 @@ struct SplashView: View {
                     .opacity(titleOpacity)
                     .scaleEffect(scale)
 
-                Text("Dan Ricks 2026")
-                    .font(.system(size: 22, weight: .semibold))
-                    .foregroundColor(.black.opacity(0.9))
-                    .shadow(color: .white, radius: 2, x: 0, y: 0)
-                    .shadow(color: .black.opacity(0.15), radius: 1, x: 0, y: 1)
-                    .opacity(subtitleOpacity)
             }
             .padding(20)
             .background(

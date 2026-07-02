@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		375218CB2FE7552A00F7DCC6 /* inch to millimeter conversion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "inch to millimeter conversion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		375218CB2FE7552A00F7DCC6 /* In to mm Snapshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "In to mm Snapshot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		375218CC2FE7552A00F7DCC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				375218CB2FE7552A00F7DCC6 /* inch to millimeter conversion.app */,
+				375218CB2FE7552A00F7DCC6 /* In to mm Snapshot.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		375218CA2FE7552A00F7DCC6 /* inch to millimeter conversion */ = {
+		375218CA2FE7552A00F7DCC6 /* In to mm Snapshot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 375218D62FE7552B00F7DCC6 /* Build configuration list for PBXNativeTarget "inch to millimeter conversion" */;
+			buildConfigurationList = 375218D62FE7552B00F7DCC6 /* Build configuration list for PBXNativeTarget "In to mm Snapshot" */;
 			buildPhases = (
 				375218C72FE7552A00F7DCC6 /* Sources */,
 				375218C82FE7552A00F7DCC6 /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				375218CD2FE7552A00F7DCC6 /* inch to millimeter conversion */,
 			);
-			name = "inch to millimeter conversion";
+			name = "In to mm Snapshot";
 			packageProductDependencies = (
 			);
-			productName = "inch to millimeter conversion";
-			productReference = 375218CB2FE7552A00F7DCC6 /* inch to millimeter conversion.app */;
+			productName = "In to mm Snapshot";
+			productReference = 375218CB2FE7552A00F7DCC6 /* In to mm Snapshot.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				375218CA2FE7552A00F7DCC6 /* inch to millimeter conversion */,
+				375218CA2FE7552A00F7DCC6 /* In to mm Snapshot */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +254,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "In to mm Snapshot";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to the camera to take a photo of the item being measured so you can include it in your screenshot.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app saves screenshots of your measurements to your photo library.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -269,8 +270,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dan-Ricks.inch-to-millimeter-conversion";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dan-Ricks.in-to-mm-snapshot";
+				PRODUCT_NAME = "In to mm Snapshot";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -298,6 +299,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "In to mm Snapshot";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to the camera to take a photo of the item being measured so you can include it in your screenshot.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app saves screenshots of your measurements to your photo library.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -313,8 +315,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dan-Ricks.inch-to-millimeter-conversion";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dan-Ricks.in-to-mm-snapshot";
+				PRODUCT_NAME = "In to mm Snapshot";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -341,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		375218D62FE7552B00F7DCC6 /* Build configuration list for PBXNativeTarget "inch to millimeter conversion" */ = {
+		375218D62FE7552B00F7DCC6 /* Build configuration list for PBXNativeTarget "In to mm Snapshot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				375218D72FE7552B00F7DCC6 /* Debug */,

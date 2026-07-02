@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  inch to millimeter conversion
+//  In to mm Snapshot
 //
 //  Created by Dan on 6/20/26.
 //
@@ -8,6 +8,7 @@
 import SwiftUI
 import UIKit
 import Photos
+import StoreKit
 
 struct ContentView: View {
     @State private var inches: String = ""
@@ -17,6 +18,10 @@ struct ContentView: View {
     @State private var showCamera = false
     @State private var isCapturing = false
     @State private var showSavedAlert = false
+
+    @State private var tipProducts: [Product] = []
+    @State private var isPurchasing = false
+    @State private var showTipThanks = false
 
     @FocusState private var focusedField: Field?
 
@@ -161,7 +166,7 @@ struct ContentView: View {
                     text.append(NSAttributedString(string: "\n", attributes: unitAttributes))
                 }
 
-                // Millimeters: number 20% larger, unit normal size
+                // mm: number 20% larger, unit normal size
                 if !mm.isEmpty {
                     let numFont = UIFont(name: "Arial-BoldMT", size: numberFontSize) ?? UIFont.boldSystemFont(ofSize: numberFontSize)
                     let unitFont = UIFont(name: "Arial-BoldMT", size: unitFontSize) ?? UIFont.boldSystemFont(ofSize: unitFontSize)
@@ -246,7 +251,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 12) {
-                Text("Inches to Millimeters")
+                Text("In to mm Snapshot")
                     .font(.title2)
                     .foregroundStyle(.secondary)
                     .padding(.top, 8)
@@ -274,9 +279,9 @@ struct ContentView: View {
                 }
                 .padding(.horizontal)
 
-                // MM input directly underneath - live bidirectional
+                // mm input directly underneath - live bidirectional
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Millimeters")
+                    Text("mm")
                         .font(.headline)
 
                     HStack {
@@ -365,13 +370,48 @@ struct ContentView: View {
                     .padding(.horizontal)
                     .padding(.bottom, 20)
                 }
+
+                // Tip / Support section at bottom
+                VStack(spacing: 8) {
+                    Text("This app is 100% free with no ads or subscriptions.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+
+                    Text("If you find it useful, optional tips are greatly appreciated.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+
+                    if !tipProducts.isEmpty {
+                        HStack(spacing: 8) {
+                            ForEach(tipProducts) { product in
+                                Button(product.displayPrice) {
+                                    Task {
+                                        await purchaseTip(product)
+                                    }
+                                }
+                                .buttonStyle(.bordered)
+                                .disabled(isPurchasing)
+                            }
+                        }
+                    }
+
+                    let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
+                    Text("v\(version) • © Dan Ricks 2026")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                }
+                .padding(.horizontal)
+                .padding(.top, 8)
             }
             .padding()
             .contentShape(Rectangle())
             .onTapGesture {
                 focusedField = nil
             }
-            .navigationTitle("inch <> mm")
+            .navigationTitle("In to mm Snapshot")
             .navigationBarTitleDisplayMode(.inline)
             .sheet(isPresented: $showCamera, onDismiss: {
                 focusedField = nil
@@ -383,6 +423,39 @@ struct ContentView: View {
             } message: {
                 Text("Screenshot has been saved to your Photos.")
             }
+            .alert("Thank you!", isPresented: $showTipThanks) {
+                Button("OK") { }
+            } message: {
+                Text("Your tip is greatly appreciated!")
+            }
+            .task {
+                do {
+                    tipProducts = try await Product.products(for: ["tip099", "tip199", "tip499"])
+                } catch {
+                    print("Failed to load tip products: \(error)")
+                }
+            }
+        }
+    }
+
+    private func purchaseTip(_ product: Product) async {
+        guard !isPurchasing else { return }
+        isPurchasing = true
+        defer { isPurchasing = false }
+        do {
+            let result = try await product.purchase()
+            switch result {
+            case .success(let verification):
+                let transaction = try verification.payloadValue
+                await transaction.finish()
+                showTipThanks = true
+            case .userCancelled, .pending:
+                break
+            @unknown default:
+                break
+            }
+        } catch {
+            print("Purchase failed: \(error)")
         }
     }
 }

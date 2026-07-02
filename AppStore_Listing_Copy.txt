@@ -1,54 +1,58 @@
 === APP STORE CONNECT LISTING - READY TO COPY ===
 
-App Name: InToMM
+App Name: In to mm Snapshot
 
 Subtitle (30 chars max):
-Inches to Millimeters Converter
+Inches to mm Converter
 
 Promotional Text (170 chars max):
-Quickly convert inches to millimeters. Add descriptions, save history, copy results. Perfect for measurements, records & sharing.
+Convert inches to mm with descriptions. Save history, copy results, and capture perfect screenshots for records and sharing.
 
 Full Description (paste into the Description field):
-InToMM is a simple, powerful tool for converting inches to millimeters with context.
+In to mm Snapshot is a fast, simple tool for converting inches to millimeters — built for makers who need accurate measurements with context.
 
-Enter any measurement in inches (supports decimals), add an optional description like "Door width" or "Shelf height", and instantly see the result in millimeters. The large, clear display is designed for easy screenshots — perfect for sharing with contractors, clients, or keeping project records.
+Enter any value in inches (decimals supported), add an optional description like "Door frame", "Shelf height", or "Hinge spacing", and get the result in millimeters instantly. The large, clean result display is designed for easy screenshots — ideal for sending to clients, contractors, or keeping project records.
 
-Features:
+Key Features:
 • Live conversion as you type
-• Quick preset buttons for common sizes (¼", ½", ¾", 1", etc.)
-• Optional description field for context
-• Save measurements to local history
-• One-tap copy of result with description
-• Clean, minimal interface optimized for screenshots
+• Quick preset buttons for common measurements (¼", ½", ¾", 1", 1.5", 2", 12")
+• Optional description field for notes
+• Save to local history for quick reference
+• One-tap copy with description included
+• Minimal, screenshot-friendly interface
 
-Whether you're a woodworker, engineer, DIYer, or contractor, InToMM makes quick work of unit conversions.
+Perfect for woodworkers, engineers, DIYers, contractors, 3D printing, and anyone who works in both imperial and metric.
 
-No ads, no subscriptions — just a useful tool.
+No ads. No subscriptions. No accounts required. Just a handy tool that works offline.
 
 Keywords (100 chars max - comma separated, no spaces after commas):
-inches,millimeters,converter,measurement,convert,tool,units,engineering,construction,DIY
+inches,millimeters,converter,measurement,units,engineering,woodworking,construction,DIY,precision
 
 What's New (for version 1.0):
-Initial release. Convert inches to mm with descriptions, presets, history and easy sharing.
+Initial release. Convert inches to millimeters with descriptions, presets, history, and easy sharing.
 
 Support URL: https://paypal.me/DanRicks444
 Marketing URL: (optional)
 
+Note: Tips are offered via in-app purchase (not PayPal).
+
 === SCREENSHOT UPLOAD ORDER ===
-For iPhone 6.9", 6.5", 5.5":
-1. Main conversion screen with result
-2. With description filled
+For iPhone 6.9", 6.5", 5.5" (use the same order for consistency):
+1. Main screen with result
+2. With description entered
 3. Presets visible
 4. History list
-5. After save or copy
+5. After using Copy or Save
 
-Use Cmd+S in Simulator. Organize in Screenshots/ folders.
+Take with Cmd+S in Simulator. Organize into your Screenshots/ folders.
 
 === NOTES ===
 - Age Rating: 4+
-- Primary Category: Utilities or Productivity
-- Secondary: Reference
+- Primary Category: Utilities
+- Secondary Category: Productivity or Reference
 - Copyright: 2026 Dan Ricks
-- Bundle ID: update in project
-- SKU: intomm
-- Privacy Policy: https://raw.githubusercontent.com/Dan-Ricks/InToMM/main/Privacy_Policy.md (or create one)
+- Bundle ID: Dan-Ricks.inch-to-millimeter-conversion (or your registered ID)
+- SKU: in-to-mm-snapshot
+- Privacy Policy URL: https://raw.githubusercontent.com/Dan-Ricks/InToMM/main/Privacy_Policy.md
+
+Make sure to select your uploaded build under the 1.0 version before submitting.

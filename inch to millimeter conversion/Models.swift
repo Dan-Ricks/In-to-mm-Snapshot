@@ -20,7 +20,7 @@ struct Measurement: Identifiable, Codable, Hashable {
 @Observable
 final class ConversionStore {
     private(set) var measurements: [Measurement] = []
-    private let storageKey = "intomm.measurements"
+    private let storageKey = "in_to_mm_snapshot.measurements"
 
     init() {
         load()

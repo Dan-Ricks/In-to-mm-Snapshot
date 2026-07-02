@@ -1,11 +1,11 @@
 #!/bin/zsh
 # Build script - updated for actual available devices
 
-echo "=== Building Inches to Millimeters iOS App ==="
+echo "=== Building In to mm Snapshot iOS App ==="
 
 cd "$(dirname "$0")"
 
-SCHEME="inch to millimeter conversion"
+SCHEME="In to mm Snapshot"
 PROJECT="inch to millimeter conversion.xcodeproj"
 
 echo "Project: $PROJECT"
